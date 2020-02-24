@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <table>Curso Javascript</table>
+</head>
+
+<body>
+    <script>
+
+        //5 Exercício
+        function resultadoUsuarios(usuarios) {
+            //A cada iteração, um valor de uma propriedade diferente é atribuido à variável.
+            //Percorre o vetor
+            for (usuarios of usuarios) {
+                console.log(
+                    "O " + usuarios.nome + " tem as habilidades: " +
+                    //juntando arrays de um vetor com join
+                    usuarios.habilidades.join(", ")
+                );
+
+            }
+        }
+
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades: ["JavaScript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Lucas",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        console.log(resultadoUsuarios(usuarios));
+
+
+    </script>
+</body>
+
+</html>
